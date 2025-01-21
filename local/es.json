@@ -1,0 +1,27 @@
+{ 
+  "index":{
+    "greeting": "Hola",
+    "welcome": "Bienvenidos a nuestro sitio web"
+  },
+"title": "CAFÉ PARA AUTOCARAVANAS",
+"Price": "Dollers$",
+"subtitle1": "Café",
+"subtitle2": "Posters",
+"Citem1": "Vanilla Francesa",
+"Citem2":"Macchiato de caramelo",
+"Citem3":"Especia de calabaza",
+"Citem4":"Avellana",
+"Citem5":"Moca",
+"Ditem1":"Dónut",
+"Ditem2":"Pastel de cerezas",
+"Ditem3":"Pastel de queso",
+"Ditem4":"Rollo de canela",
+"bot_line":"Visite nuestro sitio web",
+"contact" : 
+    {
+      "id": ["contact.html","./img/red-banner.jpg"],
+      "html": "<h2 class= \"fg-white\"></h2>\n<p class=\"fg-white\">\n  in Spanish developing and supporting complex IT solutions.\n</p>",
+    "l1": "This text should me in Spanish",
+    "l2": "This is intro, for spanish with a <a href=\"#\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
+  }
+}

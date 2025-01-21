@@ -1,0 +1,27 @@
+{
+	"index":{
+		"greeting": "Hallo",
+		"welcome": "Herzlich Willkommen auf unserer Website"
+	},
+	"title": "CAMPER CAFE",
+	"Price": "Euros$",
+	"subtitle1": "Kaffee",
+	"subtitle2": "Desserts",
+	"Citem1": "Französische Vanilla ",
+	"Citem2": "Karameml Macchiato",
+	"Citem3": "Kürbisgewürz",
+	"Citem4": "Haselnuss",
+	"Citem5": "Mokka",
+	"Ditem1": "Donut",
+	"Ditem2": "Kirschkuchen",
+	"Ditem3": " Käsekuchen",
+	"Ditem4": "Zimtschnecke",
+	"bot_line": "Besuchen Sie unsere Website",
+	"contact" : 
+    {
+     "id": ["contact.html","./img/red-banner.jpg"],
+    "html": "<h2 class= \"fg-white\"></h2>\n<p class=\"fg-white\">\n  in German developing and supporting complex IT solutions.\n</p>",
+    "l1": "This text to be in German",
+    "l2": "This is intro, for German with a <a href=\"#\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
+  }
+}
