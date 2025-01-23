@@ -1,6 +1,6 @@
 const languageSelect = document.getElementById('language-select');
 
-    const fetchTranslations= async(lang='en',page)=> {
+    const fetchTranslations= async(lang,page)=> {
         const response = await fetch(`/data?lang=${lang}`);
         const data =await response.json();
       
@@ -20,32 +20,29 @@ const languageSelect = document.getElementById('language-select');
           document.getElementById('Ditem2').textContent = index.Ditem2;
           document.getElementById('Ditem3').textContent = index.Ditem3;
           document.getElementById('Ditem4').textContent = index.Ditem4;
-          // document.getElementById('bot_line').textContent = index.bot_line;  //|| "Learn More"
-          // document.getElementById('l1').textContent = index.l1;
           document.getElementById('bot_line').href = index.src[0];
           document.getElementById('src').src = index.src[1];
 
           }else if (page === "contact"){
-            console.log("I m contact obj");
             const contact = data[page];
           document.getElementById("base").textContent = contact.id[0];
           document.getElementById("disc").innerHTML = contact.html;
           document.getElementById("img").src = contact.id[1];
           document.getElementById("l1").textContent =contact.l1;
           document.getElementById("l2").innerHTML = contact.l2;
-
-        // // upadate footer
-        }
-    
-
-    // // // Load default language
-    // fetchTranslations();
-
-    // // Change language on selection
-    // languageSelect.addEventListener('change', (event) => {
-    //   fetchTranslations(event.target.value);
-    //   // fetchTranslations(event.target.value, "contact");
-    // });
-
+          }
   };
-    export {languageSelect, fetchTranslations};
+    
+    // Initialize the language selection
+const initializeLanguage = (page) => {
+  const storedLanguage = localStorage.getItem('language') || 'en'; // Default to English
+  languageSelect.value = storedLanguage; // Set the dropdown to the stored language
+  fetchTranslations(storedLanguage, page);
+};
+
+// Update the language and store it in localStorage
+const updateLanguage = (lang, page) => {
+  localStorage.setItem('language', lang);
+  fetchTranslations(lang, page);
+};
+    export {languageSelect, initializeLanguage, updateLanguage};
