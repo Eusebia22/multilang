@@ -1,27 +1,28 @@
 {
     "index":{
       "greeting": "Bonjour",
-      "welcome": "Bienvenue sur notre site web"
+      "welcome": "Bienvenue sur notre site web",
+      "title": "CAFÉ CAMPER",
+      "Price": "Euros$",
+      "subtitle1":"café",
+      "subtitle2": "Desserts",
+      "Citem1": "Vanille française",
+      "Citem2":"Caramel Macchiato",
+      "Citem3":"Épices de citrouille",
+      "Citem4":" Noisette",
+      "Citem5":"Moka",
+      "Ditem1":"Beignet",
+      "Ditem2":"Tarte aux cerises",
+      "Ditem3":"Cheesecake",
+      "Ditem4":"Rouleau à la canelle",
+      "bot_line":"Visitez notre site web",
+      "src":["contact.html","/img/banner.jpg"]
     },
-    "title": "CAFÉ CAMPER",
-    "Price": "Euros$",
-    "subtitle1":"café",
-    "subtitle2": "Desserts",
-    "Citem1": "Vanille française",
-    "Citem2":"Caramel Macchiato",
-    "Citem3":"Épices de citrouille",
-    "Citem4":" Noisette",
-    "Citem5":"Moka",
-    "Ditem1":"Beignet",
-    "Ditem2":"Tarte aux cerises",
-    "Ditem3":"Cheesecake",
-    "Ditem4":"Rouleau à la canelle",
-    "bot_line":"Visitez notre site web",
     "contact" : 
     {
-      "id": ["contact.html","/img/red-banner.jpg"],
-      "html": "<h2 class= \"fg-white\"></h2>\n<p class=\"fg-white\">\n  in French developing and supporting complex IT solutions.\n</p>",
-      "l1": "This text to be in french",
-      "l2": "This is intro, for french with a <a href=\"#\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
-  }
-  }
+      "id": ["Informe nous","./img/red-banner.jpg"],
+      "html": "\n<p class=\"fg-white\">\n  in French developing and supporting complex IT solutions.\n</p>",
+      "l1": " \n This text to be in french",
+      "l2": "This is intro, for french with a <a href=\"https://business.my-fotoflex.com/index_fr.html\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
+    }
+}

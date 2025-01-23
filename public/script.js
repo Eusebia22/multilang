@@ -1,49 +1,51 @@
 const languageSelect = document.getElementById('language-select');
 
-    const fetchTranslations= async(lang='en')=> {
+    const fetchTranslations= async(lang='en',page)=> {
         const response = await fetch(`/data?lang=${lang}`);
         const data =await response.json();
       
-          document.getElementById('greeting').textContent = data.index.greeting;
-          document.getElementById('welcome').textContent = data.index.welcome;
-          document.getElementById('title').textContent = data.title;
-          document.getElementById('subtitle1').textContent = data.subtitle1;
-          document.getElementById('Citem1').textContent = data.Citem1;
-          document.getElementById('Citem2').textContent = data.Citem2;
-          document.getElementById('Citem3').textContent = data.Citem3;
-          document.getElementById('Citem4').textContent = data.Citem4;
-          document.getElementById('Citem5').textContent = data.Citem5;
-          document.getElementById('subtitle2').textContent = data.subtitle2;
-          document.getElementById('Ditem1').textContent = data.Ditem1;
-          document.getElementById('Ditem2').textContent = data.Ditem2;
-          document.getElementById('Ditem3').textContent = data.Ditem3;
-          document.getElementById('Ditem4').textContent = data.Ditem4;
+          if (page === "index") {
+            const index = data[page];
+          document.getElementById("greeting").textContent = index.greeting;
+          document.getElementById("welcome").textContent = index.welcome;
+          document.getElementById("title").textContent = index.title;
+          document.getElementById('subtitle1').textContent = index.subtitle1;
+          document.getElementById('Citem1').textContent = index.Citem1;
+          document.getElementById('Citem2').textContent = index.Citem2;
+          document.getElementById('Citem3').textContent = index.Citem3;
+          document.getElementById('Citem4').textContent = index.Citem4;
+          document.getElementById('Citem5').textContent = index.Citem5;
+          document.getElementById('subtitle2').textContent = index.subtitle2;
+          document.getElementById('Ditem1').textContent = index.Ditem1;
+          document.getElementById('Ditem2').textContent = index.Ditem2;
+          document.getElementById('Ditem3').textContent = index.Ditem3;
+          document.getElementById('Ditem4').textContent = index.Ditem4;
+          // document.getElementById('bot_line').textContent = index.bot_line;  //|| "Learn More"
+          // document.getElementById('l1').textContent = index.l1;
+          document.getElementById('bot_line').href = index.src[0];
+          document.getElementById('src').src = index.src[1];
 
-          document.getElementById('bot_line').href = data.contact.id[0];
-          document.getElementById('bot_line').textContent = data.bot_line;  //|| "Learn More"
-          // document.getElementById('contact').innerHTML = contact.html;
-          document.getElementById("base").textContent = data.contact.l1;
-          document.getElementById("disc").innerHTML = data.contact.html;
-          document.getElementById("img").src = data.contact.id[1];
+          }else if (page === "contact"){
+            console.log("I m contact obj");
+            const contact = data[page];
+          document.getElementById("base").textContent = contact.id[0];
+          document.getElementById("disc").innerHTML = contact.html;
+          document.getElementById("img").src = contact.id[1];
+          document.getElementById("l1").textContent =contact.l1;
+          document.getElementById("l2").innerHTML = contact.l2;
 
-          document.getElementById("l1").textContent = data.contact.l1;
-          document.getElementById("l2").innerHTML = data.contact.l2;
-
-        // upadate footer
-       
+        // // upadate footer
         }
     
 
-    // Load default language
-    fetchTranslations();
+    // // // Load default language
+    // fetchTranslations();
 
-    // Change language on selection
-    languageSelect.addEventListener('change', (event) => {
-      fetchTranslations(event.target.value);
-    });
+    // // Change language on selection
+    // languageSelect.addEventListener('change', (event) => {
+    //   fetchTranslations(event.target.value);
+    //   // fetchTranslations(event.target.value, "contact");
+    // });
 
-
-
-
-
-   
+  };
+    export {languageSelect, fetchTranslations};

@@ -7,6 +7,12 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html" data-page="index">Home</a></li>
+      <li><a href="contact.html" data-page="contact">Contact Us</a></li>
+    </ul>
+  </nav>
   <div class="langmenu"><label for="language-select">Choose Language:</label>
     <br>
   <select id="language-select">
@@ -17,15 +23,15 @@
   </select>
 </div>
   <hr class="bottom-line">
-  <div>
+  <div >
       <h2 id="base"></h2>
       <p id="disc"></p>
-      <img src="" alt="banner Img" id="img">
-  </div>
-  <div id = "main">
+      <!-- <p id="contact"></p> -->
+      <div><br></div><img src="" alt="banner Img" id="img">
     <label id="l1"></label>
     <p id="l2"></p>
   </div>
-  <script src="script.js" defer></script>
+  <script src="script.js" defer type="module"></script>
+  <script src="contact.js" defer type="module"></script>
 </body>
 </html>

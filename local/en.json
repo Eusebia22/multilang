@@ -1,26 +1,27 @@
 {
 	"index":{
 		"greeting": "Hello",
-		"welcome": "Welcome to our website"
+		"welcome": "Welcome to our website",
+		"title": "CAMPER CAFE",
+		"subtitle1": "Coffee",
+		"subtitle2": "Desserts",
+		"Citem1": "French Vanilla",
+		"Citem2": "Caramel Macchiato",
+		"Citem3": "Pumpkin Spice",
+		"Citem4": "Hazelnut",
+		"Citem5": "Mocha",
+		"Ditem1": "Donut",
+		"Ditem2": "Cherry Pie",
+		"Ditem3": "Cheesecake",
+		"Ditem4": "Cinnamon Roll",
+		"bot_line": "Visit our website",
+		"src":["contact.html","/img/banner.jpg"]
 	},
-	"title": "CAMPER CAFE",
-	"subtitle1": "Coffee",
-	"subtitle2": "Desserts",
-	"Citem1": "French Vanilla",
-	"Citem2": "Caramel Macchiato",
-	"Citem3": "Pumpkin Spice",
-	"Citem4": "Hazelnut",
-	"Citem5": "Mocha",
-	"Ditem1": "Donut",
-	"Ditem2": "Cherry Pie",
-	"Ditem3": "Cheesecake",
-	"Ditem4": "Cinnamon Roll",
-	"bot_line": "Visit our website",
 	"contact": 
 		{
-		"id": ["contact.html", "/img/red-banner.jpg"],
-		"html": "<h2 class= \"fg-white\">Tags Replace</h2>\n<p class=\"fg-white\">\n <a href=\"contact.html\">Contact</a>  L&rsquo;developing and supporting complex &eacute; IT solutions.\n</p>",
-		"l1": "This is the first text",
-		"l2": "This is intro, with a <a href=\"https://business.my-fotoflex.com/index_fr.html\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
-	}
+		"id": ["Inform Us","./img/red-banner.jpg"],
+		"html": "\n<p class=\"fg-white\">\n Find us here for L&rsquo;developing and supporting complex &eacute; IT solutions.\n</p>",
+		"l1": "\n This is the first text",
+		"l2": "This is intro, with a <a href=\"https://business.my-fotoflex.com/index_en.html\">link</a> and some <br><b> Bold text </b><div> PhotoFrame</div><strong>Strong text</strong></p>"
+		}
 }
