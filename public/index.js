@@ -9,10 +9,10 @@
 // });
 import { languageSelect, initializeLanguage, updateLanguage } from "./script.js";
 
-// Initialize language for the contact page
-initializeLanguage("contact");
+// Initialize language for the index page
+initializeLanguage("index");
 
 // Change language on selection
 languageSelect.addEventListener("change", (event) => {
-    updateLanguage(event.target.value, "contact");
+    updateLanguage(event.target.value, "index");
 });
